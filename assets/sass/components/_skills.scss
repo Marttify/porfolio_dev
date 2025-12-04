@@ -1,34 +1,77 @@
+/* Hover más oscuro automático */
+@function dark($color) {
+  @return darken($color, 10%);
+}
+
 .skills {
-  padding: 4rem 2rem;
   text-align: center;
+  padding: 2rem;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
   }
 
   .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
     list-style: none;
+    padding: 0;
+  }
 
-    .list-group-item {
-      background-color: $color-primary;
-      color: $color-text-light;
-      padding: 1rem;
-      border-radius: 8px;
-      cursor: default;
-      @include transition(transform .3s, background-color .3s);
+  .list-group-item {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    cursor: default;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 
-      &:hover {
-        transform: translateY(-5px);
-        background-color: $color-primary-hover;
-      }
+    &:hover {
+      transform: translateY(-4px);
     }
+  }
+}
 
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
+.frontend {
+  background: $frontend-color;
+
+  &:hover {
+    background: dark($frontend-color);
+  }
+}
+
+.backend {
+  background: $backend-color;
+
+  &:hover {
+    background: dark($backend-color);
+  }
+}
+
+.database {
+  background: $database-color;
+
+  &:hover {
+    background: dark($database-color);
+  }
+}
+
+.devops {
+  background: $devops-color;
+
+  &:hover {
+    background: dark($devops-color);
+  }
+}
+
+.design {
+  background: $design-color;
+
+  &:hover {
+    background: dark($design-color);
   }
 }

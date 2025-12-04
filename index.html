@@ -1,7 +1,7 @@
 <!-- 
   Proyecto: Portafolio de Martín Aguilar
   Autor: Martín Aguilar
-  Fecha: 2025-11-19
+  Fecha: 2025-11-28
   Frameworks: Bootstrap 5
   Descripción: Página web personal para mostrar proyectos, habilidades y contacto.
   Notas: Optimizada para accesibilidad y responsive design.
@@ -31,97 +31,141 @@
 
 <body>
   <!-- Header / Navegación -->
-  <header class="d-flex flex-wrap justify-content-center py-3 bg-dark">
+  <header class="d-flex flex-wrap fixed-top justify-content-center py-3 bg-dark">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi me-2" width="40" height="32">
         <use xlink:href="#bootstrap" />
       </svg>
-      <img src="./assets/img/profile.png" alt="Logo de Martín Aguilar" width="40" height="40" class="me-2 fs-4 rounded-circle">
+      <img src="./assets/img/profile.png" alt="Logo de Martín Aguilar" width="40" height="40"
+        class="me-2 fs-4 rounded-circle">
     </a>
 
     <nav>
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="./" class="nav-link bg-transparent text-white" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
-        <li class="nav-item"><a href="#proyectos" class="nav-link bg-transparent text-white">Proyectos</a></li>
+        <li class="nav-item"><a href="#experiencia" class="nav-link bg-transparent text-white">Experiencia</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link bg-transparent text-white">Habilidades</a></li>
+        <li class="nav-item"><a href="#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
         <li class="nav-item"><a href="#contacto" class="nav-link bg-transparent text-white">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Sección Hero / Presentación -->
-  <section class="hero text-center py-5 fade-in">
+  <section class="hero text-center pt-[3rem] fade-in">
     <div class="hero-content container">
       <h1>Hola, soy <span class="highlight">Martín Aguilar</span></h1>
       <p>Desarrollador web apasionado por crear experiencias digitales que generen impacto.</p>
-      <a href="#proyectos" class="bg-custom mt-3">Ver mis proyectos</a>
+      <a href="#experiencia" class=" btn btn-dark fw-bold mt-3 px-4 py-2">
+        Ver mi experiencia
+      </a>
     </div>
   </section>
 
-  <!-- Sección Proyectos -->
-  <section id="proyectos" class="proyectos container py-5">
-    <div class="d-flex gap-4 flex-wrap justify-content-center">
+  <!-- Sección experiencia -->
+  <section id="experiencia" class="proyectos container py-5">
+    <div class="d-flex gap-4 flex-wrap py-5 justify-content-center">
+
       <!-- Proyecto 1 -->
       <article class="card zoom-in delay-1" style="width: 18rem;">
-        <img src="./assets/img/project/project-1.png" class="card-img-top" alt="Proyecto Freelancer">
+        <img src="./assets/img/projects/screen_salesup.png" style="height: 18rem; width: 15rem;"
+          class="m-auto card-img-top" alt="Proyecto Sales Up Agency">
         <div class="card-body">
-          <h3 class="card-title h5">Bysbit</h3>
-          <p class="card-text">Trabajos freelance para clientes emprendedores </p>
-          <a href="./pages/project-1.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver
-            más</a>
+          <h3 class="card-title h5">Sales Up Agency</h3>
+          <p class="card-text">Full Stack Developer — Desarrollo de plataforma web y panel administrativo.</p>
+          <a href="./pages/project-front.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
+            Ver más
+          </a>
         </div>
       </article>
-
       <!-- Proyecto 2 -->
       <article class="card zoom-in delay-1" style="width: 18rem;">
-        <img src="./assets/img/project/project-2.png" class="card-img-top" alt="Proyecto Flutter">
+        <!-- Queda pendiente ajustar la imagen al contenido y en su lugar -->
+        <span class="card-img-top m-auto d-flex" style="background-color: rgb(39, 2, 88); width: 18rem; height: 18rem;">
+          <img src="./assets/img/projects/screen_wespeak.png" class="m-auto card-img-top"
+            alt="Proyecto Sales Up Agency">
+        </span>
         <div class="card-body">
-          <h3 class="card-title h5">Pet friends</h3>
-          <p class="card-text">Plataforma de adopción de mascotas realizada en una simulación de No Country.</p>
-          <a href="./pages/project-2.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver
-            más</a>
+          <h3 class="card-title h5">WeSpeak</h3>
+          <p class="card-text">Software Engineer — Desarrollo e integración de funcionalidades para plataforma
+            conversacional.</p>
+          <a href="./pages/project-Enginner.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
+            Ver más
+          </a>
         </div>
       </article>
 
       <!-- Proyecto 3 -->
       <article class="card zoom-in delay-1" style="width: 18rem;">
-        <img src="./assets/img/project/pets.png" class="card-img-top" alt="Pet Health Tracker">
+        <img src="./assets/img/projects/screen_bysbit.png" class="card-img-top" alt="Proyecto Bysbit">
         <div class="card-body">
-          <h3 class="card-title h5">Pet Health Tracker</h3>
-          <p class="card-text">
-            Aplicación web para dueños de mascotas que permite registrar y monitorear la salud de sus animales.
-          </p>
-          <a href="./pages/project-3.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">Ver
-            más</a>
+          <h3 class="card-title h5">Bysbit</h3>
+          <p class="card-text">Developer freelance — Desarrollo de soluciones a medida para emprendedores.</p>
+          <a href="./pages/project-bysbit.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
+            Ver más
+          </a>
         </div>
       </article>
 
     </div>
   </section>
+  <section id="skills" class="skills py-5">
+    <h2 class="text-center mb-5 mt-5">Habilidades</h2>
 
-  <!-- Sección Habilidades -->
-  <section id="skills" class="skills container py-5">
-    <h2>Habilidades</h2>
-    <ul class="skills-list list-group list-group-flush">
-      <li class="list-group-item">HTML5</li>
-      <li class="list-group-item">CSS3</li>
-      <li class="list-group-item">JavaScript</li>
-      <li class="list-group-item">React.js</li>
-      <li class="list-group-item">Next.js</li>
-      <li class="list-group-item">Node.js</li>
-      <li class="list-group-item">MySQL</li>
-      <li class="list-group-item">Express</li>
-      <li class="list-group-item">Firebase</li>
-      <li class="list-group-item">AWS</li>
-      <li class="list-group-item">Flutter</li>
-      <li class="list-group-item">Swift</li>
+    <ul class="skills-list">
+
+      <!-- FRONTEND -->
+      <li class="list-group-item frontend">HTML5</li>
+      <li class="list-group-item frontend">CSS3</li>
+      <li class="list-group-item frontend">Sass</li>
+      <li class="list-group-item frontend">Bootstrap 5</li>
+      <li class="list-group-item frontend">Tailwind CSS</li>
+      <li class="list-group-item frontend">JavaScript</li>
+      <li class="list-group-item frontend">React</li>
+      <li class="list-group-item frontend">Next.js</li>
+      <li class="list-group-item frontend">Vite</li>
+      <li class="list-group-item frontend">Webpack</li>
+      <li class="list-group-item frontend">Sequalize</li>
+
+      <!-- BACKEND -->
+      <li class="list-group-item backend">Node.js</li>
+      <li class="list-group-item backend">Express.js</li>
+      <li class="list-group-item backend">Python</li>
+      <li class="list-group-item backend">FastAPI</li>
+      <li class="list-group-item backend">Redis</li>
+      <li class="list-group-item backend">Drizzle ORM</li>
+      <li class="list-group-item backend">Prisma</li>
+      <li class="list-group-item backend">TypeORM</li>
+      <li class="list-group-item backend">Mongoose</li>
+      <li class="list-group-item backend">Tinybird</li>
+
+      <!-- BASES DE DATOS -->
+      <li class="list-group-item database">PostgreSQL</li>
+      <li class="list-group-item database">MySQL</li>
+      <li class="list-group-item database">MongoDB</li>
+      <li class="list-group-item database">SQLite</li>
+
+      <!-- DEVOPS -->
+      <li class="list-group-item devops">Git & GitHub</li>
+      <li class="list-group-item devops">Docker</li>
+      <li class="list-group-item devops">AWS</li>
+      <li class="list-group-item devops">CI/CD</li>
+      <li class="list-group-item devops">Postman</li>
+
+      <!-- DISEÑO & GESTIÓN -->
+      <li class="list-group-item design">Figma</li>
+      <li class="list-group-item design">Jira</li>
+      <li class="list-group-item design">Trello</li>
+      <li class="list-group-item design">Flutter</li>
+      <li class="list-group-item design">Dart</li>
+      <li class="list-group-item design">Swift</li>
+
     </ul>
   </section>
 
   <!-- Sección Sobre mí -->
   <section id="sobre-mi" class="sobre-mi container py-5 fade-in delay-1">
-    <h2>Sobre mí</h2>
+    <h2 class="mt-5">Sobre mí</h2>
     <p>
       Soy un desarrollador con experiencia en HTML, CSS y JavaScript.
       Me encanta diseñar interfaces limpias y usables, y aprender nuevas tecnologías.
@@ -130,7 +174,7 @@
 
   <!-- Sección Contacto -->
   <section id="contacto" class="contacto container py-5">
-    <h2>Contacto</h2>
+    <h2 class="mt-5">Contacto</h2>
     <form class="contact-form" aria-label="Formulario de contacto">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>

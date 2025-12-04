@@ -2,10 +2,11 @@
   background-color: $color-secondary;
   color: $color-text-light;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   height: 50vh;
   @extend %flex-center;
   flex-direction: column;
+  justify-content: end;
 
   h2 {
     font-size: 28px;
@@ -15,3 +16,4 @@
     margin: 10px 0;
   }
 }
+

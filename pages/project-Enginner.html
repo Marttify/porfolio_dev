@@ -1,0 +1,158 @@
+<!-- 
+  Proyecto: Portafolio de Martín Aguilar
+  Autor: Martín Aguilar
+  Fecha: 2025-11-06
+  Frameworks: Bootstrap 5
+  Descripción: Página de proyecto.
+  Notas: Optimizada para accesibilidad y responsive design.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Flutter | Mi Portafolio - Martín Aguilar</title>
+  <meta name="description"
+    content="Detalle del Proyecto Flutter PetFriends de Martín Aguilar. Plataforma de adopción de mascotas desarrollada con Flutter y Firebase.">
+  <meta name="author" content="Martín Aguilar">
+  <meta name="keywords" content="Proyecto Flutter, Detalle del Proyecto, Portafolio, Desarrollador Web">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+  <!-- Header / Navegación -->
+  <header class="d-flex flex-wrap justify-content-center py-3 border-bottom bg-dark">
+    <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap" />
+      </svg>
+      <span class="fs-4">Mi Portafolio</span>
+    </a>
+
+    <nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="../index.html" class="nav-link bg-transparent text-white">Home</a></li>
+        <li class="nav-item"><a href="../index.html#experiencia" class="nav-link bg-transparent text-white">Experiencia</a></li>
+        <li class="nav-item"><a href="../index.html#skills" class="nav-link bg-transparent text-white">Habilidades</a></li>
+        <li class="nav-item"><a href="../index.html#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
+        <li class="nav-item"><a href="../index.html#contacto" class="nav-link bg-transparent text-white">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Detalle del Proyecto -->
+  <main class="proyecto-detalle container py-2">
+
+    <!-- Título -->
+    <h1 data-aos="fade-up" data-aos-duration="900">wespeak</h1>
+
+    <!-- Imagen -->
+    <img src="../assets/img/projects/screen_wespeak.png" alt="Proyecto Flutter PetFriends" data-aos="fade-up"
+      data-aos-delay="150" data-aos-duration="900">
+
+    <!-- Descripción -->
+    <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+      WeSpeak es una plataforma conversacional que utiliza inteligencia artificial para mejorar la comunicación entre
+      empresas y sus clientes. Mi rol como Software Engineer incluyó el desarrollo e integración de nuevas
+      funcionalidades tanto para el equipo de venta en el panle de admin como en el usuario final, asegurando una
+      experiencia de usuario fluida y eficiente.
+    </p>
+
+    <!-- Tecnologías -->
+    <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="900">
+      <h3>Tecnologías</h3>
+
+      <div style="display: flex; flex-direction: row; gap: 1.5rem; margin-top: 1rem;">
+
+        <div class="tech-card">
+          <strong>Frontend</strong>
+          <p>
+            <span class="tech">Next.js</span>,
+            <span class="tech">NextUI</span>,
+            <span class="tech">shadcn/ui</span>,
+            <span class="tech">React Icons</span>,
+            <span class="tech">Lucide</span>,
+            <span class="tech">Recharts</span>,
+            <span class="tech">ChatUI</span>,
+            <span class="tech">Moment.js</span>,
+            <span class="tech">Date-fns</span>,
+            <span class="tech">Day.js</span>,
+            <span class="tech">Drag & Drop Libraries</span>,
+            <span class="tech">DiceBear</span>,
+          </p>
+        </div>
+        
+        <div class="tech-card">
+          <strong>Backend</strong>
+          <p>
+            <span class="tech">Node.js</span>,
+            <span class="tech">LangChain</span>,
+            <span class="tech">OpenAI</span>,
+            <span class="tech">QStash</span>,
+            <span class="tech">Tinybird</span>,
+            <span class="tech">Drizzle ORM</span>,
+            <span class="tech">PlanetScale</span>,
+            <span class="tech">MySQL</span>.
+          </p>
+        </div>
+        
+        <div class="tech-card">
+          <strong>Infraestructura / DevOps / Herramientas</strong>
+          <p>
+            <span class="tech">Turborepo</span>,
+            <span class="tech">AWS</span>,
+            <span class="tech">GitHub</span>,
+            <span class="tech">GitHub Desktop</span>,
+            <span class="tech">Git</span>,
+            <span class="tech">ScaliDraw</span>.
+            <span class="tech">Chromatic</span>,
+            <span class="tech">2chat.co</span>,
+            <span class="tech">otras librerías</span>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botón -->
+    <a href="../index.html#proyectos" class="btn bg-custom">
+      Volver a Proyectos
+    </a>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Martín Aguilar. Creador de la Web.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jes%C3%BAs-martin-aguilar/" target="_blank"
+        rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,       // Animación solo 1 vez
+      easing: 'ease-out'
+    });
+  </script>
+
+</body>
+
+</html>
