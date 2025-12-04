@@ -189,11 +189,11 @@ header nav ul li a:hover {
   width: 80%;
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #777777;
+  color: #1a1a1a;
   text-align: left;
 }
 .dark-mode .sobre-mi p {
-  color: #aaaaaa;
+  color: #f2f2f2;
 }
 @media (max-width: 768px) {
   .sobre-mi {
