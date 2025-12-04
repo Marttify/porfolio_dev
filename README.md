@@ -4,7 +4,7 @@
 ![Profile Photo](./assets/img/screen_readmed.png) <!-- Cambia la ruta a tu foto -->
 
 ## Overview
-Welcome to my personal web portfolio! This portfolio showcases my skills, projects, and experience as a web developer. It is built with **HTML5, CSS3**, and **Bootstrap 5** for responsive design.
+Welcome to my personal web portfolio! This portfolio showcases my skills, projects, and experience as a web developer. It is built with **HTML5, CSS3, SASS**, and **Bootstrap 5** for responsive design.
 
 ## Features
 - **Semantic HTML5 structure** for accessibility and SEO.
@@ -24,11 +24,12 @@ PORFOLIO-DEV/
 ├── assets/
 │   ├── css/
 │   ├── img/
+│   └── sass/
 │
 ├── pages/
-│   ├── project-1.html
-│   ├── project-2.html
-│   └── project-3.html
+│   ├── project-Enginner.html
+│   ├── project-bysbit.html
+│   └── project-front.html
 │
 ├── sketch/
 │   ├── Winsical
@@ -60,6 +61,7 @@ sass --watch assets/sass/main.scss assets/css/main.css
 
 * HTML5
 * CSS3 (Flexbox & Grid)
+* SASS
 * Bootstrap 5
 
 ## License
