@@ -42,10 +42,10 @@ PORFOLIO-DEV/
 ## How to Run
 1. Clone the repository:
 ```bash
-git clone https://github.com/Marttify/Porfolio-Dev.git
+git clone https://github.com/Marttify/porfolio_marttify.git
 ````
 ```bash
-cd Porfolio-Dev
+cd porfolio_marttify
 ````
 ```bash
 npm install
