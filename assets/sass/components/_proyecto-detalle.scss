@@ -10,32 +10,58 @@
   max-width: 80vw;
   margin: 2rem auto;
   padding: 4rem 2rem;
-  background-color: $color-background-light;
+  background-color: $light-background;
   border-radius: 8px;
 
+  .dark-mode & {
+    background-color: $dark-background;
+  }
+
+  /* Tarjetas de tecnologías */
   .tech-card {
     padding: 1rem;
     border-radius: 12px;
     background: #fafafa;
+
+    .dark-mode & {
+      background: #1f1f1f;
+    }
+
     width: 100%;
   }
 
+  /* Elementos tech individuales */
   .tech {
     transition: color 0.25s ease;
     cursor: pointer;
+    color: $light-text;
+
+    &:hover {
+      color: $light-text-hover;
+    }
+
+    .dark-mode & {
+      color: $dark-text;
+
+      &:hover {
+        color: $dark-text-hover;
+      }
+    }
   }
 
-  .tech:hover {
-    color: black;
-  }
-
+  /* Título */
   h2 {
     grid-area: titulo;
     font-size: 2rem;
     text-align: center;
-    color: $color-background-dark;
+    color: $light-text;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 
+  /* Imagen */
   img {
     grid-area: imagen;
     width: 100%;
@@ -44,34 +70,56 @@
     object-fit: cover;
   }
 
+  /* Descripción */
   p:first-of-type {
     grid-area: descripcion;
     font-size: 1.1rem;
     line-height: 1.6;
-    color: $color-text-muted;
+    color: $light-muted;
+
+    .dark-mode & {
+      color: $dark-muted;
+    }
   }
 
+  /* Tecnologías usadas */
   div:last-of-type {
     grid-area: tecnologias;
     font-size: 1rem;
     font-weight: bold;
-    color: $color-text-dark;
+    color: $light-text;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 
+  /* Botón */
   .btn {
     grid-area: btn;
     @include button-base();
-    background-color: $color-primary;
-    color: $color-text-light;
+    background-color: $light-primary;
+    color: $light-text;
     padding: 0.75rem 1.5rem;
     text-align: center;
     justify-self: center;
 
     &:hover {
-      background-color: $color-primary-hover;
+      background-color: $light-primary-hover;
+    }
+
+    .dark-mode & {
+      background-color: $dark-primary;
+      color: $dark-text;
+
+      &:hover {
+        background-color: $dark-primary-hover;
+        color: $dark-text-hover;
+      }
     }
   }
 
+  /* Layout responsivo */
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

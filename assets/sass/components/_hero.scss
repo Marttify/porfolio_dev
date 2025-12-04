@@ -1,6 +1,6 @@
 .hero {
-  background-color: $color-secondary;
-  color: $color-text-light;
+  background-color: $light-secondary;
+  color: $light-text;
   text-align: center;
   padding: 50px 20px;
   height: 50vh;
@@ -8,12 +8,25 @@
   flex-direction: column;
   justify-content: end;
 
+  // DARK MODE
+  .dark-mode & {
+    background-color: $dark-secondary;
+    color: $dark-text;
+  }
+
   h2 {
     font-size: 28px;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 
   p {
     margin: 10px 0;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 }
-

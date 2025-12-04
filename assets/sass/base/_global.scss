@@ -1,15 +1,33 @@
+/* ===========================
+   BODY GLOBAL
+=========================== */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: $color-background-light;
-  color: $color-text-dark;
+  background-color: $light-background;
+  color: $light-text;
   line-height: 1.6;
+
+  // DARK MODE
+  &.dark-mode {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
 }
 
+/* ===========================
+   TITULOS DE SECCIÓN
+=========================== */
+
 section h2 {
-  color: $color-background-dark;
+  color: $light-text;
   margin-bottom: 15px;
   font-size: 22px;
   text-align: center;
+
+  .dark-mode & {
+    color: $dark-text;
+  }
 }
 
 /* ===========================

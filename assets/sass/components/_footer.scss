@@ -1,24 +1,40 @@
 .footer {
-  background-color: $color-background-dark;
+  background-color: $light-background;
   padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
+  .dark-mode & {
+    background-color: $dark-background;
+  }
+
   p {
     font-size: 0.9rem;
-    color: $color-text-muted;
+    color: $light-muted;
+
+    .dark-mode & {
+      color: $dark-muted;
+    }
   }
 
   .social-links a {
-    color: $color-primary;
+    color: $light-primary;
     text-decoration: none;
     margin: 0 0.5rem;
     @include transition(color .3s);
 
     &:hover {
-      color: $color-primary-hover;
+      color: $light-primary-hover;
+    }
+
+    .dark-mode & {
+      color: $dark-primary;
+
+      &:hover {
+        color: $dark-primary-hover;
+      }
     }
   }
 }

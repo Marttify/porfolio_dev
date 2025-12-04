@@ -4,19 +4,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: $light-text;
+  background-color: $light-secondary;
+
+  // DARK MODE
+  .dark-mode & {
+    color: $dark-text;
+  }
 
   h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: left;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 
   p {
     margin: 0 auto;
     font-size: 1.25rem;
     line-height: 1.8;
-    color: $color-text-muted;
+    color: $light-muted;
     text-align: left;
+
+    // DARK MODE
+    .dark-mode & {
+      color: $dark-muted;
+    }
   }
 
   @media (max-width: 768px) {

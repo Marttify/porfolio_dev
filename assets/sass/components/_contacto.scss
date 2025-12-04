@@ -1,10 +1,19 @@
 .contacto {
   padding: 4rem 2rem;
+  color: $light-text;
+
+  .dark-mode & {
+    color: $dark-text;
+  }
 
   h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+
+    .dark-mode & {
+      color: $dark-text;
+    }
   }
 
   .contact-form {
@@ -16,27 +25,56 @@
 
     label {
       font-weight: bold;
+
+      .dark-mode & {
+        color: $dark-text;
+      }
     }
 
-    input:focus,
-    textarea:focus {
-      border-color: $color-accent;
-      outline: none;
-      box-shadow: 0 0 0 2px rgba(255, 63, 49, 0.3);
+    input,
+    textarea {
+      background-color: $light-background;
+      color: $light-text;
+      border: 1px solid $light-muted;
+      border-radius: 6px;
+      padding: 0.6rem 0.8rem;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+      .dark-mode & {
+        background-color: $dark-background;
+        color: $dark-text;
+        border-color: $dark-muted;
+      }
+
+      &:focus {
+        border-color: $color-accent;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 63, 49, 0.3);
+      }
     }
 
     button {
       padding: 0.75rem;
       border: none;
       border-radius: 6px;
-      background-color: $color-primary;
-      color: $color-text-light;
+      background-color: $light-primary;
+      color: $light-text;
       font-weight: bold;
       cursor: pointer;
-      @include transition(background-color .3s);
+      @include transition(background-color .3s, color .3s);
 
       &:hover {
-        background-color: $color-primary-hover;
+        background-color: $light-primary-hover;
+      }
+
+      .dark-mode & {
+        background-color: $dark-primary;
+        color: $dark-text;
+
+        &:hover {
+          background-color: $dark-primary-hover;
+          color: $dark-text-hover;
+        }
       }
     }
 

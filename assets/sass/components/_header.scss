@@ -1,4 +1,35 @@
 header {
-  background-color: $color-background-dark;
-  color: $color-text-light;
+  background-color: $light-background;
+  color: $light-text;
+
+  // DARK MODE
+  .dark-mode & {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+
+  nav {
+    ul {
+      li {
+        a {
+          color: $light-text;
+          text-decoration: none;
+
+          &:hover {
+            color: $light-text-hover;
+            text-decoration: underline;
+          }
+
+          // DARK MODE
+          .dark-mode & {
+            color: $dark-text;
+
+            &:hover {
+              color: $dark-text-hover;
+            }
+          }
+        }
+      }
+    }
+  }
 }

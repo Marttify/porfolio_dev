@@ -1,18 +1,50 @@
-// Variables modificadas para mejor contraste y legibilidad
+// ===== LIGHT MODE =====
+$light-background: #ffffff;
+$light-text: #1a1a1a;              // contraste alto
+$light-text-hover: #444444;
+$light-muted: #777777;
 
-$color-primary: #ff6f61;          
-$color-primary-hover: #e94b3c;    
-$color-secondary: #ff9966;        
-$color-background-light: #ffffff; 
-$color-background-dark: #1a1a1a;  
-$color-text-dark: #222222;        
-$color-text-light: #ffffff;       
-$color-text-muted: #777777;       
-$color-accent: #ff3f31;           
-$frontend-color: #ff6f61;
-$backend-color: #222222;
+// Botones Light
+$light-primary: #ff6f61;
+$light-primary-hover: #e94b3c;
+$light-secondary: #ff9966;
+
+// ===== DARK MODE =====
+$dark-background: #0f0f0f;         // más oscuro para contraste
+$dark-text: #f2f2f2;
+$dark-text-hover: #ffb3a7;         // leve acento claro
+$dark-muted: #aaaaaa;
+
+// Botones Dark
+$dark-primary: #ff6f61;            // se conserva para identidad visual
+$dark-primary-hover: #ff8b80;
+$dark-secondary: #ff9966;
+
+// ===== ACCENTOS GENERALES =====
+$color-accent: #ff3f31;
+
+// ===== CATEGORÍAS (manteniendo contraste en ambos modos) =====
+$frontend-color: #ff6f61;  
+$backend-color: #222222;  
 $database-color: #ff6f61;
 $devops-color: #222222;
 $mobile-color: #ff6f61;
 $design-color: #222222;
 $cms-color: #ff6f61;
+
+// ===== MAPS (opcional) para cambiar tema dinámicamente =====
+$theme-light: (
+  background: $light-background,
+  text: $light-text,
+  text-hover: $light-text-hover,
+  primary: $light-primary,
+  primary-hover: $light-primary-hover
+);
+
+$theme-dark: (
+  background: $dark-background,
+  text: $dark-text,
+  text-hover: $dark-text-hover,
+  primary: $dark-primary,
+  primary-hover: $dark-primary-hover
+);
