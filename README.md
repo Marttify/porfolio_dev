@@ -46,10 +46,7 @@ git clone https://github.com/Marttify/porfolio_marttify.git
 ````
 ```bash
 cd porfolio_marttify
-````
-```bash
-npm install
-````
+```
 ```bash
 sass --watch assets/sass/main.scss assets/css/main.css
 ````
