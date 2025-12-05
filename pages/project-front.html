@@ -36,16 +36,21 @@
       <svg class="bi me-2" width="40" height="32">
         <use xlink:href="#bootstrap" />
       </svg>
-      <img src="../assets/img/profile.png" alt="Logo de Martín Aguilar" width="40" height="40" class="me-2 fs-4 rounded-circle">
+      <img src="../assets/img/profile.png" alt="Logo de Martín Aguilar" width="40" height="40"
+        class="me-2 fs-4 rounded-circle">
     </a>
 
     <nav>
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="../index.html" class="nav-link bg-transparent text-white">Home</a></li>
-        <li class="nav-item"><a href="../index.html#experiencia" class="nav-link bg-transparent text-white">Experiencia</a></li>
-        <li class="nav-item"><a href="../index.html#skills" class="nav-link bg-transparent text-white">Habilidades</a></li>
-        <li class="nav-item"><a href="../index.html#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a></li>
-        <li class="nav-item"><a href="../index.html#contacto" class="nav-link bg-transparent text-white">Contacto</a></li>
+        <li class="nav-item"><a href="../index.html#experiencia"
+            class="nav-link bg-transparent text-white">Experiencia</a></li>
+        <li class="nav-item"><a href="../index.html#skills" class="nav-link bg-transparent text-white">Habilidades</a>
+        </li>
+        <li class="nav-item"><a href="../index.html#sobre-mi" class="nav-link bg-transparent text-white">Sobre mí</a>
+        </li>
+        <li class="nav-item"><a href="../index.html#contacto" class="nav-link bg-transparent text-white">Contacto</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -67,6 +72,50 @@
       utilizando JavaScript y Handlebars.js
       para personalizar el header y el footer segun los requerimientos adquiridos con el usuario.
     </p>
+
+    <!-- Acordeón de Desafíos -->
+    <section id="skills" class="skills py-5 container" style="max-width: 60%;">
+      <h2>Desafíos que enfrenté</h2>
+
+      <div class="accordion" id="desafiosAccordion">
+
+        <div class="accordion-item skill-backend">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne">
+              Trabajo en sitios de clientes
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#desafiosAccordion">
+            <div class="accordion-body">
+              <p class="tech-color">
+                Participé en distintos proyectos ajustando y mejorando páginas para los clientes de la agencia.
+                Desde cambios rápidos y soporte diario hasta tareas no-code y de código en plataformas como
+                Mercado Shops, siempre buscando dejar todo funcionando bien y manteniendo una experiencia prolija.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item skill-backend">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo">
+              Optimización y soporte interno
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#desafiosAccordion">
+            <div class="accordion-body">
+              <p class="tech-color">
+                Además de los sitios, brindé soporte interno cuando surgían ajustes en configuraciones,
+                paneles administrativos y otras necesidades puntuales del equipo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Tecnologías -->
     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="900" class="tech-card"
