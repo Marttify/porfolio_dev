@@ -9,7 +9,7 @@ Portafolio personal desarrollado para presentar mis proyectos, habilidades y exp
 
 ---
 
-# 🚀 **Características**
+# **Características**
 
 * Estructura **HTML5 semántica** optimizada para SEO y accesibilidad.
 * Diseño **responsive** utilizando Flexbox, Grid y Bootstrap 5.
@@ -73,7 +73,7 @@ PORFOLIO-DEV/
 
 ---
 
-# 🎨 **Arquitectura SASS explicada**
+# **Arquitectura SASS explicada**
 
 Tu proyecto usa **SASS moderno basado en módulos**, evitando `@import` (obsoleto) y usando:
 
@@ -128,7 +128,7 @@ SASS compila todo en **un único archivo CSS limpio y optimizado**.
 
 ---
 
-# 🧩 **Diagrama del flujo SASS**
+# **Diagrama del flujo SASS**
 
 ```
                                         main.scss
@@ -160,7 +160,7 @@ SASS compila todo en **un único archivo CSS limpio y optimizado**.
 
 ---
 
-# 🛠️ **Cómo ejecutar el proyecto**
+# **Cómo ejecutar el proyecto**
 
 1. Clonar el repositorio:
 
@@ -183,7 +183,7 @@ index.html
 
 ---
 
-# 📚 **Tecnologías utilizadas**
+# **Tecnologías utilizadas**
 
 * **HTML5**
 * **CSS3** (Flexbox, Grid)
@@ -194,7 +194,7 @@ index.html
 
 ---
 
-# 📄 **Licencia**
+# **Licencia**
 
 Este portafolio es para uso personal y con fines educativos.
 © 2025 Martín Aguilar.
